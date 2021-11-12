@@ -1,0 +1,41 @@
+.menu-resto {
+    &__img_presentation {
+        height: 260px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__entete {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        width: 90%;
+    }
+
+    &--title-resto {
+        font-family: 'Shrikhand', cursive;
+    }
+
+    &__like {
+        @include like-enable;
+    }
+
+    &__body {
+        background-color: $second-color;
+        border-radius: 40px 40px 0 0;
+        margin-top: -40px;
+        position: relative;
+        z-index: 2;
+        padding: 40px 15px;
+    }
+
+    &__step-title {
+        font-size: 1.6rem;
+        border-bottom: #99E2D0 2px solid;
+        font-weight: 400;
+        width: fit-content;
+    }
+}

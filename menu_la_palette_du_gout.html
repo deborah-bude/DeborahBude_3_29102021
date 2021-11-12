@@ -11,11 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./public/css/reboot.css">
     <link rel="stylesheet" href="./public/css/style.css">
 
-    <title>Oh my food - Porjet 3 Openclassroom</title>
+    <title>La Palette du goût - Menu - Oh my food</title>
 </head>
 
 <body>
@@ -24,7 +25,37 @@
     </header>
 
     <main>
+        <img class="menu-resto__img_presentation"
+            src="./public/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="Photo d'un plat du restaurant La palette du goût">
 
+        <section class="menu-resto__body">
+            <div class="menu-resto__entete">
+                <div class="menu-resto__info">
+                    <h1 class="menu-resto--title-resto">Le délice des sens</h1>
+                </div>
+                <div class="menu-resto__like">
+                    <i class="menu-resto__like--desabled far fa-heart"></i>
+                    <i class="menu-resto__like--enabled fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="menu-resto__step">
+                <h2 class="menu-resto__step-title">Entrées</h2>
+                <ul class="recipe__list">
+                    <li class="recipe__card">
+                        <div class="recipe__info">
+                            <h3>Fricassée d'escargot</h3>
+                            <p>Au piment d'espelette</p>
+                        </div>
+                        <p class="recipe__price">25€</p>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="pied-page">
