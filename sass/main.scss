@@ -1,2 +1,10 @@
 @import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/normalize_doc";
 @import "./base/typographie";
+@import "./layout/header";
+@import "./layout/search";
+@import "./layout/functioning";
+@import "./layout/restaurant";
+@import "./layout/footer";
+@import "./components/button";

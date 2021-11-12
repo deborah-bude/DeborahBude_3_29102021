@@ -15,69 +15,131 @@
     <link rel="stylesheet" href="./public/css/reboot.css">
     <link rel="stylesheet" href="./public/css/style.css">
 
-    <title>Oh my food</title>
+    <title>Oh my food - Porjet 3 Openclassroom</title>
 </head>
 
 <body>
-    <header>
-        <img src="./public/assets/logo/ohmyfood@2x.svg" alt="Logo noir Oh my food">
+    <header class="entete">
+        <img class="entete__logo" src="./public/assets/logo/ohmyfood@2x.svg" alt="Logo noir Oh my food">
     </header>
 
     <main>
         <div class="localisation">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="localisation__icon fas fa-map-marker-alt"></i>
             <p>Paris, Belleville</p>
         </div>
         <section class="resto-search">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins</p>
-            <a class="btn" href="">Explorer nos restaurants</a>
+            <a class="btn" href="#">Explorer nos restaurants</a>
         </section>
         <section class="functioning">
             <h2>Fonctionnement</h2>
             <div class="functioning__step">
                 <span class="functioning__number">1</span>
-                <i class="functioning__icon"></i>
+                <i class="functioning__icon fas fa-mobile-alt"></i>
                 <p class="functioning__text">Choisissez un restaurant</p>
             </div>
             <div class="functioning__step">
                 <span class="functioning__number">2</span>
-                <i class="functioning__icon"></i>
+                <i class="functioning__icon fas fa-list-ul"></i>
                 <p class="functioning__text">Composez votre menu</p>
             </div>
             <div class="functioning__step">
                 <span class="functioning__number">3</span>
-                <i class="functioning__icon"></i>
+                <i class="functioning__icon fas fa-store"></i>
                 <p class="functioning__text">Dégustez au restaurant</p>
             </div>
         </section>
         <section class="restos">
-            <a class="restos__prev" href="">
+            <h2>Restaurant</h2>
+            <div class="restos__list">
                 <article class="restos__card">
-                    <p>Nouveau</p>
-                    <img class="restos__photo" src="./public/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo plat restaurant La palette du goût">
-                    <div>
+                    <a class="restos__prev" href=""></a>
+                    <p class="restos__new">Nouveau</p>
+                    <img class="restos__photo" src="./public/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="Photo d'un plat du restaurant La palette du goût">
+                    </a>
+                    <div class="restos__body">
                         <div class="restos__info">
-                            <p class="restos--title-resto">La palette du goût</p>
+                            <h3 class="restos--title-resto">La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
-                        <i class="restos__like"></i>
+                        <div class="restos__like">
+                            <i class="restos__like--desabled far fa-heart"></i>
+                            <i class="restos__like--enabled fas fa-heart"></i>
+                        </div>
                     </div>
                 </article>
-            </a>
+                <article class="restos__card">
+                    <a class="restos__prev" href="">
+                        <p class="restos__new">Nouveau</p>
+                        <img class="restos__photo" src="./public/assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Photo d'un plat du restaurant La note enchantée">
+                    </a>
+                    <div class="restos__body">
+                        <div class="restos__info">
+                            <h3 class="restos--title-resto">La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="restos__like">
+                            <i class="restos__like--desabled far fa-heart"></i>
+                            <i class="restos__like--enabled fas fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="restos__card">
+                    <a class="restos__prev" href="">
+                        <img class="restos__photo"
+                            src="./public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Photo d'un plat du restaurant À la française">
+                    </a>
+                    <div class="restos__body">
+                        <div class="restos__info">
+                            <h3 class="restos--title-resto">À la française</h3>
+                            <p>Cité rouge</p>
+                        </div>
+                        <div class="restos__like">
+                            <i class="restos__like--desabled far fa-heart"></i>
+                            <i class="restos__like--enabled fas fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="restos__card">
+                    <a class="restos__prev" href="">
+                        <img class="restos__photo"
+                            src="./public/assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Photo d'un plat du restaurant Le délice des sens">
+                    </a>
+                    <div class="restos__body">
+                        <div class="restos__info">
+                            <h3 class="restos--title-resto">Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="restos__like">
+                            <i class="restos__like--desabled far fa-heart"></i>
+                            <i class="restos__like--enabled fas fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer class="pied-page">
         <img class="pied-page__logo" src="./public/assets/logo/ohmyfood@2x_white.svg" alt="Logo blanc Oh my food">
-        <div class="pied-page__icone-link">
-            <a href="">Proposer un restaurant</a>
-        </div>
-        <div class="pied-page__icone-link">
-            <a href="">Devenir partenaire</a>
-        </div>
-        <a href="">Mentions légales</a>
-        <a href="">Contact</a>
+        <section class="pied-page__section">
+            <div class="pied-page__icone-link">
+                <i class="pied-page__icone fas fa-utensils"></i>
+                <a href="">Proposer un restaurant</a>
+            </div>
+            <div class="pied-page__icone-link">
+                <i class="pied-page__icone fas fa-hands-helping"></i>
+                <a href="#">Devenir partenaire</a>
+            </div>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </section>
     </footer>
 </body>
 
