@@ -1,5 +1,5 @@
 .restos {
-    background-color: $second-color;
+    background-color: $grey-color-2;
     padding: 50px 5%;
 
     &__list {
@@ -24,7 +24,7 @@
     }
 
     &__new {
-        background-color: #99e2d0;
+        background-color: $third-color;
         color: #139273;
         border-radius: 3px;
         position: absolute;

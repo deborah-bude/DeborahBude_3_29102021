@@ -25,7 +25,7 @@
     }
 
     &__body {
-        background-color: $second-color;
+        background-color: $grey-color-2;
         border-radius: 40px 40px 0 0;
         margin-top: -40px;
         position: relative;
@@ -35,6 +35,10 @@
 
     &__step {
         margin-top: 35px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
 
         &-title {
             font-size: 1.6rem;
@@ -51,7 +55,7 @@
                 bottom: -10px;
                 height: 2px;
                 width: 40px;
-                background-color: #99e2d0;
+                background-color: $third-color;
             }
         }
     }

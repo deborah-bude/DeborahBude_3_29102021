@@ -1,9 +1,13 @@
-$primary-color: #EAEAEA;
-$second-color: #F6F6F6;
+
+$primary-color: #9356DC;
+$second-color: #FF79DA;
+$third-color: #99E2D0;
+$grey-color-1: #EAEAEA;
+$grey-color-2: #F6F6F6;
 $dark-color: #353535;
 $card-background: #fff;
-$icon-color: #9356DC;
-$btn-gradient: linear-gradient(180deg, #E370DA 0%, #A05ADC 100%);
+$btn-gradient: linear-gradient(180deg, $second-color, $primary-color);
+$btn-gradient-hover: linear-gradient(180deg, lighten($second-color, 5%), lighten($primary-color, 5%));
 
 $tablet-breakpoint: 768px;
 $computer-breakpoint: 1024px;
