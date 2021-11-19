@@ -9,7 +9,7 @@
         margin: auto;
     }
 
-    &__card {
+    &__prev {
         position: relative;
         background-color: $card-background;
         @include box-shadow;
@@ -17,6 +17,7 @@
         overflow: hidden;
         width: 100%;
         margin-bottom: 20px;
+        color: #000;
 
         &:last-child {
             margin-bottom: 0;
@@ -57,7 +58,7 @@
 
 @media screen and (min-width: $tablet-breakpoint) {
     .restos {
-        &__card {
+        &__prev {
             width: 45%;
             margin-bottom: 50px;
 

@@ -12,18 +12,27 @@
     font-size: 2rem;
     cursor: pointer;
 
-    &--enabled {
+    .like--enabled {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
         color: $primary-color;
-        transition: transform 0.5s ease-in-out backwards;
     }
 
-    &:hover {
-        .restos__like--enabled {
-            transform: translate(-50%, -50%) scale(1);
+    &:active {
+        .like--enabled {
+            animation: liked 0.5s ease-out 0.1s both;
         }
+    }
+}
+
+@keyframes liked {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
     }
 }

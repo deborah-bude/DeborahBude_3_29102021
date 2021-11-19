@@ -9,6 +9,8 @@ $card-background: #fff;
 $btn-gradient: linear-gradient(180deg, $second-color, $primary-color);
 $btn-gradient-hover: linear-gradient(180deg, lighten($second-color, 5%), lighten($primary-color, 5%));
 
+$delay: 0s;
+
 $tablet-breakpoint: 768px;
 $computer-breakpoint: 1024px;
 

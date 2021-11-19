@@ -10,6 +10,9 @@
         justify-content: space-between;
         align-items: center;
         margin-left: 20px;
+        width: 100%;
+        max-width: $max-width-screen;
+        margin: auto;
     }
 
     &__info {
@@ -31,14 +34,16 @@
         position: relative;
         z-index: 2;
         padding: 40px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     &__step {
         margin-top: 35px;
-
-        &:last-of-type {
-            margin-bottom: 50px;
-        }
+        width: 100%;
+        max-width: $max-width-screen;
+        margin: 0 auto 50px;
 
         &-title {
             font-size: 1.6rem;
