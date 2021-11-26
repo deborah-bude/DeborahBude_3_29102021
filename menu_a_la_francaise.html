@@ -14,21 +14,166 @@
     <link rel="stylesheet" href="./public/css/reboot.css">
     <link rel="stylesheet" href="./public/css/style.css">
 
-    <title>Oh my food - Porjet 3 Openclassroom</title>
+    <title>À la française - Menu - Oh my food</title>
 </head>
 
 <body>
     <header class="entete">
+        <a class="entete__icon" href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
         <img class="entete__logo" src="./public/assets/logo/ohmyfood@2x.svg" alt="Logo noir Oh my food">
     </header>
 
     <main>
+        <img class="menu-resto__img_presentation"
+            src="./public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt="Photo d'un plat du restaurant La palette du goût">
 
+        <section class="menu-resto__body">
+            <div class="menu-resto__entete">
+                <div class="menu-resto__info">
+                    <h1 class="menu-resto--title-resto">À la française</h1>
+                </div>
+                <div class="menu-resto__like">
+                    <i class="like--desabled far fa-heart"></i>
+                    <i class="like--enabled fas fa-heart"></i>
+                    <i class="like--enabled fas fa-heart"></i>
+                </div>
+            </div>
+
+            <article class="menu-resto__step">
+                <h2 class="menu-resto__step-title">Entrées</h2>
+                <ul class="recipe__list">
+                    <li class="recipe__card recipe__card--1">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <p class="recipe__price">25€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--2">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <p class="recipe__price">35€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--3">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <p class="recipe__price">20€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="menu-resto__step">
+                <h2 class="menu-resto__step-title">Plats</h2>
+                <ul class="recipe__list">
+                    <li class="recipe__card recipe__card--4">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <p class="recipe__price">40€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--5">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <p class="recipe__price">35€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--6">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <p class="recipe__price">44€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="menu-resto__step">
+                <h2 class="menu-resto__step-title">Desserts</h2>
+                <ul class="recipe__list">
+                    <li class="recipe__card  recipe__card--7">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
+                            </div>
+                            <p class="recipe__price">18€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--8">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="recipe__price">22€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="recipe__card recipe__card--9">
+                        <div class="recipe__info">
+                            <div class="recipe__title">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d’amande</p>
+                            </div>
+                            <p class="recipe__price">23€</p>
+                        </div>
+                        <div class="recipe__check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <a class="btn" href="#">Commander</a>
+        </section>
     </main>
 
     <footer class="pied-page">
         <img class="pied-page__logo" src="./public/assets/logo/ohmyfood@2x_white.svg" alt="Logo blanc Oh my food">
-        <section class="pied-page__section">
+        <div class="pied-page__section">
             <div class="pied-page__icone-link">
                 <i class="pied-page__icone fas fa-utensils"></i>
                 <a href="">Proposer un restaurant</a>
@@ -39,7 +184,7 @@
             </div>
             <a href="#">Mentions légales</a>
             <a href="mailto:contact@ohmyfood.com">Contact</a>
-        </section>
+        </div>
     </footer>
 </body>
 
