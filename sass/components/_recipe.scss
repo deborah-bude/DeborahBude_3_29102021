@@ -25,7 +25,7 @@
 
         $delay: 0s;
         @for $i from 1 to 10 {
-           &--#{$i} {
+           &:nth-child(#{$i}) {
                animation: recipe-card 0.5s ease alternate both;
                $delay: $delay + .2s;
                animation-delay: $delay;
@@ -40,6 +40,10 @@
 
             .recipe__check {
                 animation: check-icon 0.5s ease alternate both;
+
+                i {
+                    transform: rotate(360deg);
+                }
             }
         }
     }
@@ -83,6 +87,11 @@
         background-color: $third-color;
         color: white;
         transform: translateX(100%);
+
+        i {
+            transform: rotate(0);
+            transition: transform 0.5s ease-in-out;
+        }
     }
 }
 
