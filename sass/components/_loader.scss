@@ -27,56 +27,52 @@
         transform-origin: center;
         animation: loader-bar-animation 1.2s ease-in-out 0.2s infinite both;
     }
-
-    .pan-container {
-        display: flex;
-        transform-origin: 90% center;
-        animation: pan-animation 1.2s ease-in-out 0.2s infinite both;
-    }
-
-    .pan {
-        width: 125px;
-        height: 20px;
-        background: $primary-color;
-        border-radius: 0 0 50px 50px;
-    }
-
-    .handle{
-        width: 75px;
-        height: 10px;
-        background: $primary-color;
-        border-radius: 50px;
-    }
-
-    &__bar {
-        display: inline-block;
-        height: 15vh;
-        width: 20px;
-        background-color: $third-color;
-        margin-right: 10px;
-        animation: loading 1s ease-in-out infinite alternate;
-        
-        @for $i from 1 through 3 {
-            &--#{$i} {
-                animation-delay: 0.3s * $i;
-            }
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 }
 
-// @keyframes loading {
-//     0% {
-//         transform: scaleY(1);
-//     }
+.pan-container {
+    display: flex;
+    transform-origin: 90% center;
+    animation: pan-animation 1.2s ease-in-out 0.2s infinite both;
+}
 
-//     100% {
-//         transform: scaleY(0.5);
-//     }
-// }
+.pan {
+    width: 125px;
+    height: 20px;
+    background: $primary-color;
+    border-radius: 0 0 50px 50px;
+}
+
+.handle{
+    width: 75px;
+    height: 10px;
+    background: $primary-color;
+    border-radius: 50px;
+}
+
+.vegetable {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 238, 139);
+    display: inline-block;
+    border-radius: 46% 54% 51% 49% / 28% 60% 40% 72%;
+    position: absolute;
+    bottom: 0;
+
+    &:nth-child(1) {
+        left: 55px;
+        animation: vegetables 1.2s cubic-bezier(.51,.08,.46,.97) infinite both;
+    }
+
+    &:nth-child(2) {
+        left: 28px;
+        animation: vegetables 1.2s cubic-bezier(.51,.08,.46,.97) 0.1s infinite both;
+    }
+
+    &:nth-child(3) {
+        left: 80px;
+        animation: vegetables 1.2s cubic-bezier(.51,.08,.46,.97) 0.18s infinite both;
+    }
+}
 
 @keyframes loading_section {
     0% {
@@ -135,11 +131,23 @@
 
     95% {
         transform:translate(0) rotate(360deg);
-        opacity: 1;
     }
 
     100% {
-        transform: rotate(0) translate(0);
-        opacity: 0;
+        transform: rotate(360deg) translate(0);
+    }
+}
+
+@keyframes vegetables {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-84px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
