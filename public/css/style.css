@@ -593,14 +593,14 @@ p {
   height: 500%;
   border-radius: 100%;
   transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
-  transform: translate(-120%, -50%) translateZ(0);
+  transform: translate(-120%, -50%);
   z-index: -1;
 }
 .btn:hover {
   color: white;
 }
 .btn:hover:after {
-  transform: translate(-45%, -34%) translateZ(0);
+  transform: translate(-45%, -34%);
 }
 
 .recipe__list {
