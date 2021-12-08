@@ -239,7 +239,7 @@ p {
   color: #7e7e7e;
   font-size: 2rem;
   position: absolute;
-  left: 20%;
+  left: 15%;
 }
 
 @media screen and (min-width: 768px) {
